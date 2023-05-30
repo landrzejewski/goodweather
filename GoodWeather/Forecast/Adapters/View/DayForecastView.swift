@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct DayForecastView: View {
+   
+    var viewModel: DayForecastViewModel
+    
     var body: some View {
         VStack(spacing: 4) {
-            Text("Pn")
-                .defaultStyle()
-            Image(systemName: "sun.max.fill")
+            Image(systemName: viewModel.icon)
                 .iconStyle()
-            Text("18°")
+            Text(viewModel.temperature)
+                .defaultStyle()
+            Text(viewModel.date)
                 .defaultStyle()
         }
     }
@@ -22,6 +25,6 @@ struct DayForecastView: View {
 
 struct DayForecastView_Previews: PreviewProvider {
     static var previews: some View {
-        DayForecastView()
+        DayForecastView(viewModel: DayForecastViewModel(date: "Pn", icon: "sun.max.fill", description: "", temperature: "18°", pressure: ""))
     }
 }

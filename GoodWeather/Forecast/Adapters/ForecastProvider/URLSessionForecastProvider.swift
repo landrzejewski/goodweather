@@ -9,7 +9,7 @@ import Foundation
 
 final class URLSessionForecastProvider: ForecastProvider {
     
-    private let url = "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=7&units=metric&APPID=b933866e6489f58987b2898c89f542b8&q="
+    private let url = "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=6&units=metric&APPID=b933866e6489f58987b2898c89f542b8&q="
     
     func getForecast(for city: String, callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
         guard let requestURL = URL(string: "\(url)\(city)") else {
