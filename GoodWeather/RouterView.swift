@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
+import Factory
 
 struct RouterView: View {
     
-    private let factory = ApplicationFactory.shared
+    @Injected(\.forecastViewModel)
+    private var forecastViewModel: ForecastViewModel
     @EnvironmentObject
     private var router: Router
     
     var body: some View {
         switch router.route {
         case .forecast:
-            ForecastView(viewModel: factory.forecast.forecastViewModel)
-        default:
-            Text("Not found")
+            ForecastView(viewModel: forecastViewModel)
+        case .forecastDtails:
+            ForecastView(viewModel: forecastViewModel)
         }
     }
 }

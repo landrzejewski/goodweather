@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Factory
 
 struct ForecastView: View {
     
@@ -83,7 +84,7 @@ struct ForecastView: View {
 struct ForecastView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let forecastService = ForecastService(forecastProvider: FakeForecastProvider(), forecastRepository: FakeForecastRepository())
-        ForecastView(viewModel: ForecastViewModel(forecastService: forecastService, locationProvider: FakeLocationProvider()))
+        ForecastView(viewModel: Container.shared.forecastViewModel())
     }
+    
 }

@@ -20,7 +20,11 @@ final class FakeForecastRepository: ForecastRepository {
     }
     
     func get(by city: String, callback: @escaping (Result<Forecast, ForecastRepositoryError>) -> ()) {
-        callback(.success(data[city]!))
+        if let forecast = data[city] {
+            callback(.success(forecast))
+        } else {
+            callback(.failure(.failed))
+        }
     }
     
 }

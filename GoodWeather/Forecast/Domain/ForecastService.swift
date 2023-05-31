@@ -18,7 +18,21 @@ final class ForecastService {
     }
     
     func getForecast(for city: String, callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
-        forecastProvider.getForecast(for: city, callback: callback)
+        try? forecastRepository.get(by: city) { result in
+            if case let .success(forecast) = result {
+                callback(.success(forecast))
+            }
+        }
+        forecastProvider.getForecast(for: city) { [self] result in
+            switch result {
+            case .success(let forecast):
+                try? forecastRepository.deleteAll()
+                try? forecastRepository.save(forecast: forecast)
+                callback(result)
+            case .failure(_):
+                callback(result)
+            }
+        }
     }
     
     func getForecast(for location: (Double, Double), callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {

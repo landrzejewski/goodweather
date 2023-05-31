@@ -41,7 +41,7 @@ final class CoreLocationProvider: NSObject, LocationProvider, CLLocationManagerD
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        refreshLocation()
+        //refreshLocation()
     }
     
 }
