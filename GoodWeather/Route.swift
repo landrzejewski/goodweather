@@ -10,6 +10,5 @@ import Foundation
 enum Route {
     
     case forecast
-    case forecastDtails
     
 }

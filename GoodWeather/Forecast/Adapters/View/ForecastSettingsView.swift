@@ -36,7 +36,6 @@ struct ForecastSettingsView: View {
     private var closeButton: some View {
         Image(systemName: "xmark.circle")
             .iconStyle(width: 20, height: 20)
-            .buttonStyle(DefaultButtonStyle())
             .padding(EdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 6))
     }
 }

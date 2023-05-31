@@ -38,7 +38,6 @@ struct ForecastView: View {
                 .padding()
                 Text(viewModel.city)
                     .defaultStyle(size: 32)
-                    .onTapGesture { router.route = .forecastDtails }
                 Spacer()
                 if let currentForecast = viewModel.currentForecast {
                     Image(systemName: currentForecast.icon)

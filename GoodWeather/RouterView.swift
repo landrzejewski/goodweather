@@ -19,8 +19,6 @@ struct RouterView: View {
         switch router.route {
         case .forecast:
             ForecastView(viewModel: forecastViewModel)
-        case .forecastDtails:
-            ForecastView(viewModel: forecastViewModel)
         }
     }
 }
