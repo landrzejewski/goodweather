@@ -11,6 +11,12 @@ final class ForecastFactory {
     
     private lazy var forecastProvider: ForecastProvider = URLSessionForecastProvider()
     
-    lazy var forecastViewModel = ForecastViewModel(forecastProvider: forecastProvider)
+    private lazy var locationProvider: LocationProvider = CoreLocationProvider()
+    
+    private lazy var forecastRepository: ForecastRepository = FakeForecastRepository()
+    
+    private lazy var forecastService = ForecastService(forecastProvider: forecastProvider, forecastRepository: forecastRepository)
+    
+    lazy var forecastViewModel = ForecastViewModel(forecastService: forecastService, locationProvider: locationProvider)
     
 }

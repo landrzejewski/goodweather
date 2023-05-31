@@ -16,34 +16,52 @@ final class ForecastViewModel: ObservableObject {
     var currentForecast: DayForecastViewModel?
     @Published
     var nextDaysForecast: [DayForecastViewModel] = []
+    @Published
+    var errors = false
+
+    private let forecastService: ForecastService
+    private let locationProvider: LocationProvider
+    private var subscriptions = Set<AnyCancellable>()
     
-    init(forecastProvider: ForecastProvider) {
-        forecastProvider.getForecast(for: "warsaw") { [self] result in
+    init(forecastService: ForecastService, locationProvider: LocationProvider) {
+        self.forecastService = forecastService
+        self.locationProvider = locationProvider
+        locationProvider.location.sink { [self] location in
+            forecastService.getForecast(for: location, callback: onForecastRefreshed)
+        }
+        .store(in: &subscriptions)
+    }
+    
+    func refreshForecast() {
+        if !city.isEmpty {
+            refreshForecast(for: city)
+        }
+    }
+    
+    func refreshForecast(for city: String) {
+        forecastService.getForecast(for: city, callback: onForecastRefreshed)
+    }
+    
+    func refreshForecastForCurrentLocation() {
+        locationProvider.refreshLocation()
+    }
+    
+    func onForecastRefreshed(result: Result<Forecast, ForecastProviderError>) {
+        onMainThread { [self] in
             switch result {
             case .success(let forecast):
+                errors = false
                 showForecast(forecast)
-            default:
-                print("failed")
+            case .failure(_):
+                errors = true
             }
-            
         }
     }
     
     func showForecast(_ forecast: Forecast) {
-        DispatchQueue.main.async { [self] in
-            city = "Warsaw"
-            currentForecast = toViewModel(forecast.weather.first!)
-            nextDaysForecast = forecast.weather.dropLast()
-                .map(toViewModel)
-        }
-    }
-    
-    private func toViewModel(_ dayForecast: DayForecast) -> DayForecastViewModel {
-        let date = formatDate(dayForecast.date)
-        let icon = mapIcon(dayForecast.icon)
-        let temperature = formatTemperature(dayForecast.temperature)
-        let pressure = formatPressure(dayForecast.pressure)
-        return DayForecastViewModel(date: date, icon: icon, description: dayForecast.description, temperature: temperature , pressure: pressure)
+        city = forecast.city
+        currentForecast = toViewModel(forecast.weather.first!)
+        nextDaysForecast = forecast.weather.dropLast().map(toViewModel)
     }
     
 }

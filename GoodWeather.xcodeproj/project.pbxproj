@@ -39,6 +39,20 @@
 		B2520A9D2A263E24009198B3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A9C2A263E24009198B3 /* Router.swift */; };
 		B2520A9F2A263E55009198B3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A9E2A263E55009198B3 /* Route.swift */; };
 		B2520AA32A264043009198B3 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AA22A264043009198B3 /* RouterView.swift */; };
+		B2520AA52A272F90009198B3 /* ForecastViewMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AA42A272F90009198B3 /* ForecastViewMapper.swift */; };
+		B2520AA72A273025009198B3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AA62A273025009198B3 /* utils.swift */; };
+		B2520AAA2A273154009198B3 /* ForecastOpenWeatherMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AA92A273154009198B3 /* ForecastOpenWeatherMapper.swift */; };
+		B2520AAC2A2738CF009198B3 /* DefaultButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AAB2A2738CF009198B3 /* DefaultButtonStyle.swift */; };
+		B2520AAF2A27487C009198B3 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AAE2A27487C009198B3 /* LocationProvider.swift */; };
+		B2520AB12A2749CE009198B3 /* FakeLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AB02A2749CE009198B3 /* FakeLocationProvider.swift */; };
+		B2520AB32A274F7E009198B3 /* CityDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AB22A274F7E009198B3 /* CityDto.swift */; };
+		B2520AB52A27507B009198B3 /* CoreLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AB42A27507B009198B3 /* CoreLocationProvider.swift */; };
+		B2520AB82A275877009198B3 /* ForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AB72A275877009198B3 /* ForecastRepository.swift */; };
+		B2520ABA2A275945009198B3 /* ForecastRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AB92A275945009198B3 /* ForecastRepositoryError.swift */; };
+		B2520ABC2A2759C3009198B3 /* FakeForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520ABB2A2759C3009198B3 /* FakeForecastRepository.swift */; };
+		B2520ABF2A275D1E009198B3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B2520ABE2A275D1E009198B3 /* SQLite */; };
+		B2520AC22A275DA4009198B3 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B2520AC12A275DA4009198B3 /* Factory */; };
+		B2520AC42A275DF2009198B3 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AC32A275DF2009198B3 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +108,18 @@
 		B2520A9C2A263E24009198B3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B2520A9E2A263E55009198B3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		B2520AA22A264043009198B3 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		B2520AA42A272F90009198B3 /* ForecastViewMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewMapper.swift; sourceTree = "<group>"; };
+		B2520AA62A273025009198B3 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		B2520AA92A273154009198B3 /* ForecastOpenWeatherMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastOpenWeatherMapper.swift; sourceTree = "<group>"; };
+		B2520AAB2A2738CF009198B3 /* DefaultButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonStyle.swift; sourceTree = "<group>"; };
+		B2520AAE2A27487C009198B3 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		B2520AB02A2749CE009198B3 /* FakeLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLocationProvider.swift; sourceTree = "<group>"; };
+		B2520AB22A274F7E009198B3 /* CityDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDto.swift; sourceTree = "<group>"; };
+		B2520AB42A27507B009198B3 /* CoreLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationProvider.swift; sourceTree = "<group>"; };
+		B2520AB72A275877009198B3 /* ForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepository.swift; sourceTree = "<group>"; };
+		B2520AB92A275945009198B3 /* ForecastRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepositoryError.swift; sourceTree = "<group>"; };
+		B2520ABB2A2759C3009198B3 /* FakeForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeForecastRepository.swift; sourceTree = "<group>"; };
+		B2520AC32A275DF2009198B3 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2520ABF2A275D1E009198B3 /* SQLite in Frameworks */,
+				B2520AC22A275DA4009198B3 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +172,8 @@
 		B2520A3E2A26024E009198B3 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
-				B2520A742A2622B8009198B3 /* Forecast */,
 				B2520A692A26073F009198B3 /* Common */,
+				B2520A742A2622B8009198B3 /* Forecast */,
 				B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */,
 				B2520A962A263708009198B3 /* ApplicationFactory.swift */,
 				B2520AA22A264043009198B3 /* RouterView.swift */,
@@ -191,6 +219,8 @@
 				B2520A702A260D8D009198B3 /* Image+ext.swift */,
 				B2520A722A261C9E009198B3 /* Color+ext.swift */,
 				B2520A9C2A263E24009198B3 /* Router.swift */,
+				B2520AA62A273025009198B3 /* utils.swift */,
+				B2520AAB2A2738CF009198B3 /* DefaultButtonStyle.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -209,6 +239,7 @@
 		B2520A752A262321009198B3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B2520AC32A275DF2009198B3 /* ForecastService.swift */,
 				B2520A8A2A262465009198B3 /* Forecast.swift */,
 				B2520A8B2A262465009198B3 /* DayForecast.swift */,
 			);
@@ -220,6 +251,9 @@
 			children = (
 				B2520A862A26243F009198B3 /* ForecastProvider.swift */,
 				B2520A872A26243F009198B3 /* ForecastProviderError.swift */,
+				B2520AAE2A27487C009198B3 /* LocationProvider.swift */,
+				B2520AB72A275877009198B3 /* ForecastRepository.swift */,
+				B2520AB92A275945009198B3 /* ForecastRepositoryError.swift */,
 			);
 			path = Ports;
 			sourceTree = "<group>";
@@ -229,6 +263,8 @@
 			children = (
 				B2520A782A262391009198B3 /* View */,
 				B2520A792A2623A1009198B3 /* ForecastProvider */,
+				B2520AAD2A274835009198B3 /* LocationProvider */,
+				B2520AB62A2757C7009198B3 /* Persistence */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -241,6 +277,7 @@
 				B2520A6E2A260CBE009198B3 /* DayForecastView.swift */,
 				B2520A902A262FDF009198B3 /* DayForecastViewModel.swift */,
 				B2520A9A2A263A86009198B3 /* ForecastSettingsView.swift */,
+				B2520AA42A272F90009198B3 /* ForecastViewMapper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,14 +285,41 @@
 		B2520A792A2623A1009198B3 /* ForecastProvider */ = {
 			isa = PBXGroup;
 			children = (
-				B2520A7D2A262416009198B3 /* DayForecastDto.swift */,
+				B2520AA82A273133009198B3 /* OpenWeather */,
 				B2520A7B2A262416009198B3 /* FakeForecastProvider.swift */,
+			);
+			path = ForecastProvider;
+			sourceTree = "<group>";
+		};
+		B2520AA82A273133009198B3 /* OpenWeather */ = {
+			isa = PBXGroup;
+			children = (
+				B2520A7D2A262416009198B3 /* DayForecastDto.swift */,
 				B2520A7A2A262416009198B3 /* ForecastDto.swift */,
 				B2520A7C2A262416009198B3 /* TemperatureDto.swift */,
 				B2520A7F2A262416009198B3 /* URLSessionForecastProvider.swift */,
 				B2520A7E2A262416009198B3 /* WeatherDto.swift */,
+				B2520AA92A273154009198B3 /* ForecastOpenWeatherMapper.swift */,
+				B2520AB22A274F7E009198B3 /* CityDto.swift */,
 			);
-			path = ForecastProvider;
+			path = OpenWeather;
+			sourceTree = "<group>";
+		};
+		B2520AAD2A274835009198B3 /* LocationProvider */ = {
+			isa = PBXGroup;
+			children = (
+				B2520AB02A2749CE009198B3 /* FakeLocationProvider.swift */,
+				B2520AB42A27507B009198B3 /* CoreLocationProvider.swift */,
+			);
+			path = LocationProvider;
+			sourceTree = "<group>";
+		};
+		B2520AB62A2757C7009198B3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B2520ABB2A2759C3009198B3 /* FakeForecastRepository.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +338,10 @@
 			dependencies = (
 			);
 			name = GoodWeather;
+			packageProductDependencies = (
+				B2520ABE2A275D1E009198B3 /* SQLite */,
+				B2520AC12A275DA4009198B3 /* Factory */,
+			);
 			productName = GoodWeather;
 			productReference = B2520A3C2A26024E009198B3 /* GoodWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +414,10 @@
 				Base,
 			);
 			mainGroup = B2520A332A26024E009198B3;
+			packageReferences = (
+				B2520ABD2A275D1E009198B3 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				B2520AC02A275DA4009198B3 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = B2520A3D2A26024E009198B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,14 +460,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2520AB52A27507B009198B3 /* CoreLocationProvider.swift in Sources */,
+				B2520AB32A274F7E009198B3 /* CityDto.swift in Sources */,
 				B2520A8C2A262465009198B3 /* Forecast.swift in Sources */,
 				B2520A852A262416009198B3 /* URLSessionForecastProvider.swift in Sources */,
 				B2520A9D2A263E24009198B3 /* Router.swift in Sources */,
+				B2520ABC2A2759C3009198B3 /* FakeForecastRepository.swift in Sources */,
 				B2520A8D2A262465009198B3 /* DayForecast.swift in Sources */,
+				B2520AB82A275877009198B3 /* ForecastRepository.swift in Sources */,
 				B2520A6D2A2608C8009198B3 /* View+ext.swift in Sources */,
 				B2520A812A262416009198B3 /* FakeForecastProvider.swift in Sources */,
 				B2520A882A26243F009198B3 /* ForecastProvider.swift in Sources */,
 				B2520A912A262FDF009198B3 /* DayForecastViewModel.swift in Sources */,
+				B2520AA72A273025009198B3 /* utils.swift in Sources */,
 				B2520A6B2A260750009198B3 /* Text+ext.swift in Sources */,
 				B2520A9B2A263A86009198B3 /* ForecastSettingsView.swift in Sources */,
 				B2520A802A262416009198B3 /* ForecastDto.swift in Sources */,
@@ -405,15 +482,22 @@
 				B2520A972A263708009198B3 /* ApplicationFactory.swift in Sources */,
 				B2520A8F2A26260B009198B3 /* ForecastViewModel.swift in Sources */,
 				B2520A732A261C9E009198B3 /* Color+ext.swift in Sources */,
+				B2520AC42A275DF2009198B3 /* ForecastService.swift in Sources */,
 				B2520A9F2A263E55009198B3 /* Route.swift in Sources */,
+				B2520AAC2A2738CF009198B3 /* DefaultButtonStyle.swift in Sources */,
 				B2520A842A262416009198B3 /* WeatherDto.swift in Sources */,
+				B2520AAF2A27487C009198B3 /* LocationProvider.swift in Sources */,
 				B2520A832A262416009198B3 /* DayForecastDto.swift in Sources */,
 				B2520A942A263063009198B3 /* formatters.swift in Sources */,
+				B2520AAA2A273154009198B3 /* ForecastOpenWeatherMapper.swift in Sources */,
 				B2520AA32A264043009198B3 /* RouterView.swift in Sources */,
 				B2520A6F2A260CBE009198B3 /* DayForecastView.swift in Sources */,
+				B2520AB12A2749CE009198B3 /* FakeLocationProvider.swift in Sources */,
 				B2520A892A26243F009198B3 /* ForecastProviderError.swift in Sources */,
+				B2520AA52A272F90009198B3 /* ForecastViewMapper.swift in Sources */,
 				B2520A422A26024E009198B3 /* ForecastView.swift in Sources */,
 				B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */,
+				B2520ABA2A275945009198B3 /* ForecastRepositoryError.swift in Sources */,
 				B2520A712A260D8D009198B3 /* Image+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +660,7 @@
 				DEVELOPMENT_TEAM = 34A9J24W7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is needed for forecast refresh";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -605,6 +690,7 @@
 				DEVELOPMENT_TEAM = 34A9J24W7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is needed for forecast refresh";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -739,6 +825,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2520ABD2A275D1E009198B3 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+		B2520AC02A275DA4009198B3 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2520ABE2A275D1E009198B3 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2520ABD2A275D1E009198B3 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		B2520AC12A275DA4009198B3 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2520AC02A275DA4009198B3 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2520A342A26024E009198B3 /* Project object */;
 }

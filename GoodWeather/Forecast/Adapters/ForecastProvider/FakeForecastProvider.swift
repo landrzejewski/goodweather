@@ -8,7 +8,7 @@
 import Foundation
 
 final class FakeForecastProvider: ForecastProvider {
-    
+
     private let weather = [
         DayForecast(date: Date(), icon: "02d", description: "Clear sky", temperature: 20.0, pressure: 1_000.0),
         DayForecast(date: Date(), icon: "01d", description: "Clear sky", temperature: 18.0, pressure: 1_001.0),
@@ -18,6 +18,10 @@ final class FakeForecastProvider: ForecastProvider {
     func getForecast(for city: String, callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
         let forecast = Forecast(city: city, weather: weather)
         callback(.success(forecast))
+    }
+    
+    func getForecast(for location: (Double, Double), callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
+        getForecast(for: "Warsaw", callback: callback)
     }
     
 }
