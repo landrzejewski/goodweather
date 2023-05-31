@@ -53,9 +53,14 @@ struct ForecastView: View {
                 }
                 Spacer()
                 HStack {
-                    ForEach(viewModel.nextDaysForecast, id: \.date) {
-                        DayForecastView(viewModel: $0)
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(viewModel.nextDaysForecast, id: \.date) {
+                                DayForecastView(viewModel: $0)
+                            }
+                        }
                     }
+                    .padding(.all, 8)
                 }
             }
             if viewModel.errors {
