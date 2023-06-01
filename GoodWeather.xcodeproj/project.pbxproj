@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B232E5702A2889D100F8AB9C /* URLSession+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -74,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B232E56E2A28893E00F8AB9C /* Training.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Training.playground; sourceTree = "<group>"; };
+		B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+ext.swift"; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		B2520A332A26024E009198B3 = {
 			isa = PBXGroup;
 			children = (
+				B232E56E2A28893E00F8AB9C /* Training.playground */,
 				B2520A3E2A26024E009198B3 /* GoodWeather */,
 				B2520A4F2A26024F009198B3 /* GoodWeatherTests */,
 				B2520A592A26024F009198B3 /* GoodWeatherUITests */,
@@ -224,6 +228,7 @@
 				B2520A702A260D8D009198B3 /* Image+ext.swift */,
 				B2520A722A261C9E009198B3 /* Color+ext.swift */,
 				B2520A9C2A263E24009198B3 /* Router.swift */,
+				B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				B2520A892A26243F009198B3 /* ForecastProviderError.swift in Sources */,
 				B2520AA52A272F90009198B3 /* ForecastViewMapper.swift in Sources */,
 				B2520A422A26024E009198B3 /* ForecastView.swift in Sources */,
+				B232E5702A2889D100F8AB9C /* URLSession+ext.swift in Sources */,
 				B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */,
 				B2520ABA2A275945009198B3 /* ForecastRepositoryError.swift in Sources */,
 				B2520A712A260D8D009198B3 /* Image+ext.swift in Sources */,
