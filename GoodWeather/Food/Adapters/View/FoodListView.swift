@@ -12,6 +12,8 @@ struct FoodListView: View {
     
     @ObservedObject
     var viewModel: FoodListViewModel
+    @Injected(\.orderViewModel)
+    var orderViewModel: OrderViewModel
 
     var body: some View {
         NavigationView {
@@ -34,10 +36,11 @@ struct FoodListView: View {
                 if let selectedFood = viewModel.selectedFood, viewModel.showDetails {
                     FoodDetailsView(isVisible: $viewModel.showDetails, viewModel: selectedFood)
                 }
+                
             }
             .toolbar {
                 ToolbarItem {
-                    Button(action: {}) {
+                    NavigationLink(destination: OrderView(viewModel: orderViewModel)) {
                         Image(systemName: "cart")
                     }
                 }

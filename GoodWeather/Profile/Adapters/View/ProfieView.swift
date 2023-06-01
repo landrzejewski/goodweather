@@ -12,10 +12,30 @@ struct ProfieView: View {
     
     @ObservedObject
     var viewModel: ProfileViewModel
+    @State
+    var profileImage: UIImage?
+    @State
+    var showImagePicker = false
     
     var body: some View {
         NavigationView {
             VStack {
+                ZStack {
+                    if profileImage != nil {
+                        Image(uiImage: profileImage!)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(Circle())
+                            .frame(width: 200, height: 200)
+                    } else {
+                        Image("Placeholder")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(Circle())
+                            .frame(width: 200, height: 200)
+                    }
+                }
+                .onTapGesture { showImagePicker.toggle() }
                 Form {
                     Section(header: Text("Personal info")) {
                         TextField("First name", text: $viewModel.firstName)
@@ -52,6 +72,9 @@ struct ProfieView: View {
             }
             .navigationTitle("Profile")
             //.navigationBarTitleDisplayMode(.inline)
+            .sheet(isPresented: $showImagePicker) {
+                ImagePickerView(selectedImage: $profileImage, source: .photoLibrary)
+            }
         }
     }
 }
