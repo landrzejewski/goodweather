@@ -33,4 +33,8 @@ extension Container {
         self { ProfileViewModel() }.singleton
     }
     
+    var foodListViewModel: Factory<FoodListViewModel> {
+        self { FoodListViewModel() }.singleton
+    }
+    
 }

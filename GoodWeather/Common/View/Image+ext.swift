@@ -14,10 +14,11 @@ extension Image {
             .size(width: width, height: height)
     }
     
-    func templateStyle(width: CGFloat = 40, height: CGFloat = 40, color: Color = .white) -> some View {
+    func templateStyle(width: CGFloat = 40, height: CGFloat = 40, color: Color = .white, opacity: Double = 1.0) -> some View {
         renderingMode(.template)
             .size(width: width, height: height)
             .foregroundColor(color)
+            .opacity(opacity)
     }
     
     private func size(width: CGFloat, height: CGFloat) -> some View {
