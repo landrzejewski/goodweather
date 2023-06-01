@@ -6,37 +6,44 @@
 //
 
 import Foundation
+import Combine
 
 final class ForecastService {
     
     private let forecastProvider: ForecastProvider
     private let forecastRepository: ForecastRepository
+    private var subscriptions = Set<AnyCancellable>()
     
     init(forecastProvider: ForecastProvider, forecastRepository: ForecastRepository) {
         self.forecastProvider = forecastProvider
         self.forecastRepository = forecastRepository
     }
     
-    func getForecast(for city: String, callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
+    func getForecast(for city: String) -> AnyPublisher<Forecast, ForecastProviderError> {
+        let respose = PassthroughSubject<Forecast, ForecastProviderError>()
         try? forecastRepository.get(by: city) { result in
             if case let .success(forecast) = result {
-                callback(.success(forecast))
+                respose.send(forecast)
             }
         }
-        forecastProvider.getForecast(for: city) { [self] result in
-            switch result {
-            case .success(let forecast):
+        forecastProvider.getForecast(for: city)
+            .sink {
+                if case .failure = $0 {
+                    respose.send(completion: $0)
+                }
+            }
+            receiveValue: { [self] forecast in
                 try? forecastRepository.deleteAll()
                 try? forecastRepository.save(forecast: forecast)
-                callback(result)
-            case .failure(_):
-                callback(result)
+                respose.send(forecast)
+                subscriptions.removeAll()
             }
-        }
+            .store(in: &subscriptions)
+        return respose.eraseToAnyPublisher()
     }
     
-    func getForecast(for location: (Double, Double), callback: @escaping (Result<Forecast, ForecastProviderError>) -> ()) {
-        forecastProvider.getForecast(for: location, callback: callback)
+    func getForecast(for location: (Double, Double)) -> AnyPublisher<Forecast, ForecastProviderError> {
+        forecastProvider.getForecast(for: location)
     }
     
 }

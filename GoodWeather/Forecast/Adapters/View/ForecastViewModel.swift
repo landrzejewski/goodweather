@@ -27,7 +27,7 @@ final class ForecastViewModel: ObservableObject {
         self.forecastService = forecastService
         self.locationProvider = locationProvider
         locationProvider.location.sink { [self] location in
-            forecastService.getForecast(for: location, callback: onForecastRefreshed)
+            onForecastRefreshed(forecast: forecastService.getForecast(for: location))
         }
         .store(in: &subscriptions)
     }
@@ -35,27 +35,33 @@ final class ForecastViewModel: ObservableObject {
     func refreshForecast() {
         if !city.isEmpty {
             refreshForecast(for: city)
+        } else {
+            refreshForecastForCurrentLocation()
         }
     }
     
     func refreshForecast(for city: String) {
-        forecastService.getForecast(for: city, callback: onForecastRefreshed)
+        onForecastRefreshed(forecast: forecastService.getForecast(for: city))
     }
     
     func refreshForecastForCurrentLocation() {
         locationProvider.refreshLocation()
     }
     
-    func onForecastRefreshed(result: Result<Forecast, ForecastProviderError>) {
-        onMainThread { [self] in
-            switch result {
-            case .success(let forecast):
-                errors = false
-                showForecast(forecast)
-            case .failure(_):
-                errors = true
+    private func onForecastRefreshed(forecast: AnyPublisher<Forecast, ForecastProviderError>) {
+        forecast.receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: {
+                switch $0 {
+                case .finished:
+                    self.subscriptions.removeAll()
+                case .failure(_):
+                    self.errors = true
+                }
+            }) {
+                self.errors = false
+                self.showForecast($0)
             }
-        }
+            .store(in: &subscriptions)
     }
     
     func showForecast(_ forecast: Forecast) {

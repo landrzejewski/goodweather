@@ -21,7 +21,6 @@
 		B2520A712A260D8D009198B3 /* Image+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A702A260D8D009198B3 /* Image+ext.swift */; };
 		B2520A732A261C9E009198B3 /* Color+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A722A261C9E009198B3 /* Color+ext.swift */; };
 		B2520A802A262416009198B3 /* ForecastDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A7A2A262416009198B3 /* ForecastDto.swift */; };
-		B2520A812A262416009198B3 /* FakeForecastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A7B2A262416009198B3 /* FakeForecastProvider.swift */; };
 		B2520A822A262416009198B3 /* TemperatureDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A7C2A262416009198B3 /* TemperatureDto.swift */; };
 		B2520A832A262416009198B3 /* DayForecastDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A7D2A262416009198B3 /* DayForecastDto.swift */; };
 		B2520A842A262416009198B3 /* WeatherDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A7E2A262416009198B3 /* WeatherDto.swift */; };
@@ -93,7 +92,6 @@
 		B2520A702A260D8D009198B3 /* Image+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ext.swift"; sourceTree = "<group>"; };
 		B2520A722A261C9E009198B3 /* Color+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ext.swift"; sourceTree = "<group>"; };
 		B2520A7A2A262416009198B3 /* ForecastDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDto.swift; sourceTree = "<group>"; };
-		B2520A7B2A262416009198B3 /* FakeForecastProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeForecastProvider.swift; sourceTree = "<group>"; };
 		B2520A7C2A262416009198B3 /* TemperatureDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureDto.swift; sourceTree = "<group>"; };
 		B2520A7D2A262416009198B3 /* DayForecastDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayForecastDto.swift; sourceTree = "<group>"; };
 		B2520A7E2A262416009198B3 /* WeatherDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDto.swift; sourceTree = "<group>"; };
@@ -293,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				B2520AA82A273133009198B3 /* OpenWeather */,
-				B2520A7B2A262416009198B3 /* FakeForecastProvider.swift */,
 			);
 			path = ForecastProvider;
 			sourceTree = "<group>";
@@ -478,7 +475,6 @@
 				B2520A8D2A262465009198B3 /* DayForecast.swift in Sources */,
 				B2520AB82A275877009198B3 /* ForecastRepository.swift in Sources */,
 				B2520A6D2A2608C8009198B3 /* View+ext.swift in Sources */,
-				B2520A812A262416009198B3 /* FakeForecastProvider.swift in Sources */,
 				B2520A882A26243F009198B3 /* ForecastProvider.swift in Sources */,
 				B2520A912A262FDF009198B3 /* DayForecastViewModel.swift in Sources */,
 				B2520AA72A273025009198B3 /* utils.swift in Sources */,
