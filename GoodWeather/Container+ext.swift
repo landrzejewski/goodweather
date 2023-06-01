@@ -14,7 +14,7 @@ extension Container {
     }
     
     var locationProvider: Factory<LocationProvider> {
-        self { CoreLocationProvider() }.singleton
+        self { FakeLocationProvider() }.singleton
     }
     
     var forecastRepository: Factory<ForecastRepository> {
