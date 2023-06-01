@@ -24,6 +24,8 @@
 		B232E5962A28B3CA00F8AB9C /* big-burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E5902A28B3CA00F8AB9C /* big-burger.png */; };
 		B232E5972A28B3CA00F8AB9C /* healthy-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E5912A28B3CA00F8AB9C /* healthy-pizza.png */; };
 		B232E5982A28B3CA00F8AB9C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B232E5922A28B3CA00F8AB9C /* data.json */; };
+		B232E59C2A28B57400F8AB9C /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E59A2A28B57400F8AB9C /* ImagePickerCoordinator.swift */; };
+		B232E59D2A28B57400F8AB9C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E59B2A28B57400F8AB9C /* ImagePickerView.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -108,6 +110,8 @@
 		B232E5902A28B3CA00F8AB9C /* big-burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-burger.png"; sourceTree = "<group>"; };
 		B232E5912A28B3CA00F8AB9C /* healthy-pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "healthy-pizza.png"; sourceTree = "<group>"; };
 		B232E5922A28B3CA00F8AB9C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B232E59A2A28B57400F8AB9C /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		B232E59B2A28B57400F8AB9C /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -257,6 +261,19 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		B232E5992A28B55A00F8AB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B232E59A2A28B57400F8AB9C /* ImagePickerCoordinator.swift */,
+				B232E59B2A28B57400F8AB9C /* ImagePickerView.swift */,
+				B2520A6A2A260750009198B3 /* Text+ext.swift */,
+				B2520A6C2A2608C8009198B3 /* View+ext.swift */,
+				B2520A702A260D8D009198B3 /* Image+ext.swift */,
+				B2520A722A261C9E009198B3 /* Color+ext.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2520A332A26024E009198B3 = {
 			isa = PBXGroup;
 			children = (
@@ -323,15 +340,12 @@
 		B2520A692A26073F009198B3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B232E5992A28B55A00F8AB9C /* View */,
 				B2520ACA2A279117009198B3 /* Capitalized.swift */,
 				B2520AC92A279117009198B3 /* UserProperty.swift */,
 				B2520A922A263063009198B3 /* formatters.swift */,
 				B2520A932A263063009198B3 /* mappers.swift */,
 				B2520AA62A273025009198B3 /* utils.swift */,
-				B2520A6A2A260750009198B3 /* Text+ext.swift */,
-				B2520A6C2A2608C8009198B3 /* View+ext.swift */,
-				B2520A702A260D8D009198B3 /* Image+ext.swift */,
-				B2520A722A261C9E009198B3 /* Color+ext.swift */,
 				B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */,
 				B232E57D2A28AB0900F8AB9C /* validators.swift */,
 			);
@@ -600,6 +614,7 @@
 				B2520A912A262FDF009198B3 /* DayForecastViewModel.swift in Sources */,
 				B232E5892A28B3AE00F8AB9C /* OrderEntryViewModel.swift in Sources */,
 				B2520AA72A273025009198B3 /* utils.swift in Sources */,
+				B232E59D2A28B57400F8AB9C /* ImagePickerView.swift in Sources */,
 				B232E5872A28B3AE00F8AB9C /* OrderViewModel.swift in Sources */,
 				B2520ACC2A279117009198B3 /* Capitalized.swift in Sources */,
 				B2520A6B2A260750009198B3 /* Text+ext.swift in Sources */,
@@ -628,6 +643,7 @@
 				B232E58A2A28B3AE00F8AB9C /* FoodViewModel.swift in Sources */,
 				B232E57A2A28A37A00F8AB9C /* ProfieView.swift in Sources */,
 				B2520AA52A272F90009198B3 /* ForecastViewMapper.swift in Sources */,
+				B232E59C2A28B57400F8AB9C /* ImagePickerCoordinator.swift in Sources */,
 				B2520A422A26024E009198B3 /* ForecastView.swift in Sources */,
 				B232E5702A2889D100F8AB9C /* URLSession+ext.swift in Sources */,
 				B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */,
