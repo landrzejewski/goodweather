@@ -15,7 +15,7 @@ struct ForecastView: View {
     @State
     private var showSettings = false
     @EnvironmentObject
-    private var router: Router
+    private var router: ForecastRouter
     @AppStorage("city")
     private var city = ""
     @Environment(\.scenePhase)

@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  ForecastRouter.swift
 //  GoodWeather
 //
 //  Created by Łukasz Andrzejewski on 30/05/2023.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class Router: ObservableObject {
+final class ForecastRouter: ObservableObject {
     
     @Published
-    var route = Route.forecast
+    var route = ForecastRoute.forecast
     
 }

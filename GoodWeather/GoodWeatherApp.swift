@@ -6,14 +6,31 @@
 //
 
 import SwiftUI
+import Factory
 
 @main
 struct GoodWeatherApp: App {
     
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = .lightGray
+    }
+    
     var body: some Scene {
         WindowGroup {
-            RouterView()
-                .environmentObject(Router())
+            TabView {
+                ForecastRouterView()
+                    .environmentObject(ForecastRouter())
+                    .tabItem {
+                        Image(systemName: "sun.max.fill")
+                        Text("Forecast")
+                    }
+                ProfieView(viewModel: Container.shared.profileViewModel())
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+            }
+            .accentColor(.activeColor)
         }
     }
     

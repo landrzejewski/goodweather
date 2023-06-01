@@ -29,4 +29,8 @@ extension Container {
         self { ForecastViewModel(forecastService: self.forecastService(), locationProvider: self.locationProvider()) }.singleton
     }
     
+    var profileViewModel: Factory<ProfileViewModel> {
+        self { ProfileViewModel() }.singleton
+    }
+    
 }
