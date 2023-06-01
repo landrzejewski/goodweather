@@ -15,7 +15,7 @@ func formatPressure(_ value: Double) -> String {
     "\(Int(value))hPa"
 }
 
-func formatDate(_ date: Date, dateFormat: String = "EEEE") -> String {
+func formatDate(_ date: Date, dateFormat: String = "EE") -> String {
     let formatter = DateFormatter()
     formatter.dateFormat = dateFormat
     return formatter.string(from: date)
