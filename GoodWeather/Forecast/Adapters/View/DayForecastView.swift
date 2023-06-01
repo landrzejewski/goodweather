@@ -18,7 +18,7 @@ struct DayForecastView: View {
             Text(viewModel.temperature)
                 .defaultStyle()
             Text(viewModel.date)
-                .defaultStyle()
+                .defaultStyle(size: 14)
         }
     }
 }

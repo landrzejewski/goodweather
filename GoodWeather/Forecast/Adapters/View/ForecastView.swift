@@ -54,13 +54,13 @@ struct ForecastView: View {
                 Spacer()
                 HStack {
                     ScrollView(.horizontal) {
-                        HStack {
+                        HStack(spacing: 16.0) {
                             ForEach(viewModel.nextDaysForecast, id: \.date) {
                                 DayForecastView(viewModel: $0)
                             }
                         }
                     }
-                    .padding(.all, 8)
+                    .padding(.all, 32)
                 }
             }
             if viewModel.errors {
