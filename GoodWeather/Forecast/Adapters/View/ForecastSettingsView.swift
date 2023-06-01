@@ -24,7 +24,7 @@ struct ForecastSettingsView: View {
             }
             .padding(.top, 6)
             Form {
-                Section(header: Text("Place")) {
+                Section(header: Text("Location")) {
                     TextField("Enter city name:", text: $city)
                         .onAppear { city = storedCity }
                         .onDisappear { storedCity = city }
