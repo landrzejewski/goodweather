@@ -14,6 +14,16 @@
 		B232E57A2A28A37A00F8AB9C /* ProfieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5792A28A37A00F8AB9C /* ProfieView.swift */; };
 		B232E57C2A28A5F900F8AB9C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E57B2A28A5F900F8AB9C /* ProfileViewModel.swift */; };
 		B232E57E2A28AB0900F8AB9C /* validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E57D2A28AB0900F8AB9C /* validators.swift */; };
+		B232E5872A28B3AE00F8AB9C /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5832A28B3AE00F8AB9C /* OrderViewModel.swift */; };
+		B232E5882A28B3AE00F8AB9C /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5842A28B3AE00F8AB9C /* FoodListViewModel.swift */; };
+		B232E5892A28B3AE00F8AB9C /* OrderEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5852A28B3AE00F8AB9C /* OrderEntryViewModel.swift */; };
+		B232E58A2A28B3AE00F8AB9C /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5862A28B3AE00F8AB9C /* FoodViewModel.swift */; };
+		B232E5932A28B3CA00F8AB9C /* asparagus-steak.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E58D2A28B3CA00F8AB9C /* asparagus-steak.png */; };
+		B232E5942A28B3CA00F8AB9C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E58E2A28B3CA00F8AB9C /* placeholder.png */; };
+		B232E5952A28B3CA00F8AB9C /* salmon-teriyaki-fish.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E58F2A28B3CA00F8AB9C /* salmon-teriyaki-fish.png */; };
+		B232E5962A28B3CA00F8AB9C /* big-burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E5902A28B3CA00F8AB9C /* big-burger.png */; };
+		B232E5972A28B3CA00F8AB9C /* healthy-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = B232E5912A28B3CA00F8AB9C /* healthy-pizza.png */; };
+		B232E5982A28B3CA00F8AB9C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B232E5922A28B3CA00F8AB9C /* data.json */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -88,6 +98,16 @@
 		B232E5792A28A37A00F8AB9C /* ProfieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieView.swift; sourceTree = "<group>"; };
 		B232E57B2A28A5F900F8AB9C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B232E57D2A28AB0900F8AB9C /* validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validators.swift; sourceTree = "<group>"; };
+		B232E5832A28B3AE00F8AB9C /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		B232E5842A28B3AE00F8AB9C /* FoodListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		B232E5852A28B3AE00F8AB9C /* OrderEntryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderEntryViewModel.swift; sourceTree = "<group>"; };
+		B232E5862A28B3AE00F8AB9C /* FoodViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		B232E58D2A28B3CA00F8AB9C /* asparagus-steak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "asparagus-steak.png"; sourceTree = "<group>"; };
+		B232E58E2A28B3CA00F8AB9C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		B232E58F2A28B3CA00F8AB9C /* salmon-teriyaki-fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "salmon-teriyaki-fish.png"; sourceTree = "<group>"; };
+		B232E5902A28B3CA00F8AB9C /* big-burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-burger.png"; sourceTree = "<group>"; };
+		B232E5912A28B3CA00F8AB9C /* healthy-pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "healthy-pizza.png"; sourceTree = "<group>"; };
+		B232E5922A28B3CA00F8AB9C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -175,10 +195,66 @@
 		B232E5782A28A35200F8AB9C /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				B232E5812A28B39100F8AB9C /* View */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		B232E57F2A28B35800F8AB9C /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				B232E5802A28B38300F8AB9C /* Adapters */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		B232E5802A28B38300F8AB9C /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				B232E5822A28B39F00F8AB9C /* View */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		B232E5812A28B39100F8AB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B232E5792A28A37A00F8AB9C /* ProfieView.swift */,
 				B232E57B2A28A5F900F8AB9C /* ProfileViewModel.swift */,
 			);
-			path = Adapters;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B232E5822A28B39F00F8AB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B232E5842A28B3AE00F8AB9C /* FoodListViewModel.swift */,
+				B232E5862A28B3AE00F8AB9C /* FoodViewModel.swift */,
+				B232E5852A28B3AE00F8AB9C /* OrderEntryViewModel.swift */,
+				B232E5832A28B3AE00F8AB9C /* OrderViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B232E58B2A28B3CA00F8AB9C /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				B232E58C2A28B3CA00F8AB9C /* images */,
+				B232E5922A28B3CA00F8AB9C /* data.json */,
+			);
+			path = extras;
+			sourceTree = "<group>";
+		};
+		B232E58C2A28B3CA00F8AB9C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B232E58D2A28B3CA00F8AB9C /* asparagus-steak.png */,
+				B232E58E2A28B3CA00F8AB9C /* placeholder.png */,
+				B232E58F2A28B3CA00F8AB9C /* salmon-teriyaki-fish.png */,
+				B232E5902A28B3CA00F8AB9C /* big-burger.png */,
+				B232E5912A28B3CA00F8AB9C /* healthy-pizza.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		B2520A332A26024E009198B3 = {
@@ -186,6 +262,7 @@
 			children = (
 				B232E56E2A28893E00F8AB9C /* Training.playground */,
 				B232E5732A289F6200F8AB9C /* data.json */,
+				B232E58B2A28B3CA00F8AB9C /* extras */,
 				B2520A3E2A26024E009198B3 /* GoodWeather */,
 				B2520A4F2A26024F009198B3 /* GoodWeatherTests */,
 				B2520A592A26024F009198B3 /* GoodWeatherUITests */,
@@ -209,6 +286,7 @@
 				B2520A692A26073F009198B3 /* Common */,
 				B2520A742A2622B8009198B3 /* Forecast */,
 				B232E5772A28A34900F8AB9C /* Profile */,
+				B232E57F2A28B35800F8AB9C /* Food */,
 				B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */,
 				B2520A962A263708009198B3 /* Container+ext.swift */,
 				B2520A432A26024E009198B3 /* Assets.xcassets */,
@@ -473,8 +551,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B232E5962A28B3CA00F8AB9C /* big-burger.png in Resources */,
 				B2520A472A26024E009198B3 /* Preview Assets.xcassets in Resources */,
+				B232E5952A28B3CA00F8AB9C /* salmon-teriyaki-fish.png in Resources */,
 				B232E5742A289F6200F8AB9C /* data.json in Resources */,
+				B232E5932A28B3CA00F8AB9C /* asparagus-steak.png in Resources */,
+				B232E5942A28B3CA00F8AB9C /* placeholder.png in Resources */,
+				B232E5972A28B3CA00F8AB9C /* healthy-pizza.png in Resources */,
+				B232E5982A28B3CA00F8AB9C /* data.json in Resources */,
 				B2520A442A26024E009198B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +598,9 @@
 				B2520A6D2A2608C8009198B3 /* View+ext.swift in Sources */,
 				B2520A882A26243F009198B3 /* ForecastProvider.swift in Sources */,
 				B2520A912A262FDF009198B3 /* DayForecastViewModel.swift in Sources */,
+				B232E5892A28B3AE00F8AB9C /* OrderEntryViewModel.swift in Sources */,
 				B2520AA72A273025009198B3 /* utils.swift in Sources */,
+				B232E5872A28B3AE00F8AB9C /* OrderViewModel.swift in Sources */,
 				B2520ACC2A279117009198B3 /* Capitalized.swift in Sources */,
 				B2520A6B2A260750009198B3 /* Text+ext.swift in Sources */,
 				B2520A9B2A263A86009198B3 /* ForecastSettingsView.swift in Sources */,
@@ -522,6 +608,7 @@
 				B232E57C2A28A5F900F8AB9C /* ProfileViewModel.swift in Sources */,
 				B2520A822A262416009198B3 /* TemperatureDto.swift in Sources */,
 				B2520A952A263063009198B3 /* mappers.swift in Sources */,
+				B232E5882A28B3AE00F8AB9C /* FoodListViewModel.swift in Sources */,
 				B2520A972A263708009198B3 /* Container+ext.swift in Sources */,
 				B2520A8F2A26260B009198B3 /* ForecastViewModel.swift in Sources */,
 				B2520A732A261C9E009198B3 /* Color+ext.swift in Sources */,
@@ -538,6 +625,7 @@
 				B232E5722A289F5300F8AB9C /* FakeForecastProvider.swift in Sources */,
 				B2520AB12A2749CE009198B3 /* FakeLocationProvider.swift in Sources */,
 				B2520A892A26243F009198B3 /* ForecastProviderError.swift in Sources */,
+				B232E58A2A28B3AE00F8AB9C /* FoodViewModel.swift in Sources */,
 				B232E57A2A28A37A00F8AB9C /* ProfieView.swift in Sources */,
 				B2520AA52A272F90009198B3 /* ForecastViewMapper.swift in Sources */,
 				B2520A422A26024E009198B3 /* ForecastView.swift in Sources */,
