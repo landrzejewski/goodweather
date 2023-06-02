@@ -24,7 +24,7 @@ struct SegmentedViewAnimation: View {
             VStack {
             }
             .frame(width: reader.size.width - 20, height: 200)
-            .background(Image("big-burger"))
+            .background(Image("Burger"))
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(10)
                 .offset(x: food == 0 ? 0 : -reader.size.width - 20, y: 0)
@@ -32,7 +32,7 @@ struct SegmentedViewAnimation: View {
             VStack {
             }
             .frame(width: reader.size.width - 20, height: 200)
-            .background(Image("healthy-pizza"))
+            .background(Image("Pizza"))
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(10)
                 .offset(x: food == 1 ? 0 : reader.size.width - 20, y: 0)

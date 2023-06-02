@@ -36,6 +36,9 @@
 		B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */; };
 		B232E5C82A29D8E000F8AB9C /* ButtonsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */; };
 		B232E5CA2A29D9B100F8AB9C /* SegmentedViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */; };
+		B232E5CC2A29DA9000F8AB9C /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CB2A29DA9000F8AB9C /* ScrollAnimation.swift */; };
+		B232E5CE2A29DB5000F8AB9C /* BottomMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CD2A29DB5000F8AB9C /* BottomMenuAnimation.swift */; };
+		B232E5D02A29DBAA00F8AB9C /* MatchedGeometryEffectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CF2A29DBA900F8AB9C /* MatchedGeometryEffectAnimation.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -132,6 +135,9 @@
 		B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimations.swift; sourceTree = "<group>"; };
 		B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsAnimation.swift; sourceTree = "<group>"; };
 		B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewAnimation.swift; sourceTree = "<group>"; };
+		B232E5CB2A29DA9000F8AB9C /* ScrollAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollAnimation.swift; sourceTree = "<group>"; };
+		B232E5CD2A29DB5000F8AB9C /* BottomMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomMenuAnimation.swift; sourceTree = "<group>"; };
+		B232E5CF2A29DBA900F8AB9C /* MatchedGeometryEffectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectAnimation.swift; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -307,6 +313,9 @@
 				B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */,
 				B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */,
 				B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */,
+				B232E5CB2A29DA9000F8AB9C /* ScrollAnimation.swift */,
+				B232E5CD2A29DB5000F8AB9C /* BottomMenuAnimation.swift */,
+				B232E5CF2A29DBA900F8AB9C /* MatchedGeometryEffectAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -650,13 +659,16 @@
 				B2520A852A262416009198B3 /* URLSessionForecastProvider.swift in Sources */,
 				B2520A9D2A263E24009198B3 /* ForecastRouter.swift in Sources */,
 				B2520ABC2A2759C3009198B3 /* FakeForecastRepository.swift in Sources */,
+				B232E5D02A29DBAA00F8AB9C /* MatchedGeometryEffectAnimation.swift in Sources */,
 				B2520A8D2A262465009198B3 /* DayForecast.swift in Sources */,
 				B2520AB82A275877009198B3 /* ForecastRepository.swift in Sources */,
+				B232E5CE2A29DB5000F8AB9C /* BottomMenuAnimation.swift in Sources */,
 				B2520A6D2A2608C8009198B3 /* View+ext.swift in Sources */,
 				B2520A882A26243F009198B3 /* ForecastProvider.swift in Sources */,
 				B2520A912A262FDF009198B3 /* DayForecastViewModel.swift in Sources */,
 				B232E5892A28B3AE00F8AB9C /* OrderEntryViewModel.swift in Sources */,
 				B232E5A32A28C1EF00F8AB9C /* ActivityIndicatorView.swift in Sources */,
+				B232E5CC2A29DA9000F8AB9C /* ScrollAnimation.swift in Sources */,
 				B2520AA72A273025009198B3 /* utils.swift in Sources */,
 				B232E59D2A28B57400F8AB9C /* ImagePickerView.swift in Sources */,
 				B232E5872A28B3AE00F8AB9C /* OrderViewModel.swift in Sources */,

@@ -17,26 +17,25 @@ struct GoodWeatherApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ButtonsAnimation()
-//            TabView {
-//                ForecastRouterView()
-//                    .environmentObject(ForecastRouter())
-//                    .tabItem {
-//                        Image(systemName: "sun.max.fill")
-//                        Text("Forecast")
-//                    }
-//                FoodListView(viewModel: Container.shared.foodListViewModel())
-//                    .tabItem {
-//                        Image(systemName: "list.dash")
-//                        Text("Food")
-//                    }
-//                ProfieView(viewModel: Container.shared.profileViewModel())
-//                    .tabItem {
-//                        Image(systemName: "person")
-//                        Text("Profile")
-//                    }
-//            }
-//            .accentColor(.activeColor)
+            TabView {
+                ForecastRouterView()
+                    .environmentObject(ForecastRouter())
+                    .tabItem {
+                        Image(systemName: "sun.max.fill")
+                        Text("Forecast")
+                    }
+                FoodListView(viewModel: Container.shared.foodListViewModel())
+                    .tabItem {
+                        Image(systemName: "list.dash")
+                        Text("Food")
+                    }
+                ProfieView(viewModel: Container.shared.profileViewModel())
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+            }
+            .accentColor(.activeColor)
         }
     }
     
