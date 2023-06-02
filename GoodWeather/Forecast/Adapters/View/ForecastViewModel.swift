@@ -18,18 +18,18 @@ final class ForecastViewModel: ObservableObject {
     var nextDaysForecast: [DayForecastViewModel] = []
     @Published
     var errors = false
-
+    
     private let forecastService: ForecastService
     private let locationProvider: LocationProvider
     private var subscriptions = Set<AnyCancellable>()
+    private var locationSubscription: AnyCancellable?
     
     init(forecastService: ForecastService, locationProvider: LocationProvider) {
         self.forecastService = forecastService
         self.locationProvider = locationProvider
-        locationProvider.location.sink { [unowned self] location in
+        locationSubscription = locationProvider.location.sink { [unowned self] location in
             onForecastRefreshed(forecast: forecastService.getForecast(for: location))
         }
-        .store(in: &subscriptions)
     }
     
     func refreshForecast() {
