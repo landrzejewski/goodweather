@@ -23,7 +23,7 @@ final class ForecastService {
                 callback(.success(forecast))
             }
         }
-        forecastProvider.getForecast(for: city) { [self] result in
+        forecastProvider.getForecast(for: city) { [unowned self] result in
             switch result {
             case .success(let forecast):
                 try? forecastRepository.deleteAll()

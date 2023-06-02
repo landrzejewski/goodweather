@@ -26,7 +26,7 @@ final class ForecastViewModel: ObservableObject {
     init(forecastService: ForecastService, locationProvider: LocationProvider) {
         self.forecastService = forecastService
         self.locationProvider = locationProvider
-        locationProvider.location.sink { [self] location in
+        locationProvider.location.sink { [unowned self] location in
             forecastService.getForecast(for: location, callback: onForecastRefreshed)
         }
         .store(in: &subscriptions)
