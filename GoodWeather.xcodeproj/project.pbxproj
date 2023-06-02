@@ -39,6 +39,8 @@
 		B232E5CC2A29DA9000F8AB9C /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CB2A29DA9000F8AB9C /* ScrollAnimation.swift */; };
 		B232E5CE2A29DB5000F8AB9C /* BottomMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CD2A29DB5000F8AB9C /* BottomMenuAnimation.swift */; };
 		B232E5D02A29DBAA00F8AB9C /* MatchedGeometryEffectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5CF2A29DBA900F8AB9C /* MatchedGeometryEffectAnimation.swift */; };
+		B232E5D32A29DE4800F8AB9C /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5D12A29DE4800F8AB9C /* Template.swift */; };
+		B232E5D42A29DE4800F8AB9C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5D22A29DE4800F8AB9C /* Calculator.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -138,6 +140,8 @@
 		B232E5CB2A29DA9000F8AB9C /* ScrollAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollAnimation.swift; sourceTree = "<group>"; };
 		B232E5CD2A29DB5000F8AB9C /* BottomMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomMenuAnimation.swift; sourceTree = "<group>"; };
 		B232E5CF2A29DBA900F8AB9C /* MatchedGeometryEffectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectAnimation.swift; sourceTree = "<group>"; };
+		B232E5D12A29DE4800F8AB9C /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		B232E5D22A29DE4800F8AB9C /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 		B232E5992A28B55A00F8AB9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B232E5D22A29DE4800F8AB9C /* Calculator.swift */,
+				B232E5D12A29DE4800F8AB9C /* Template.swift */,
 				B232E59A2A28B57400F8AB9C /* ImagePickerCoordinator.swift */,
 				B232E59B2A28B57400F8AB9C /* ImagePickerView.swift */,
 				B2520A6A2A260750009198B3 /* Text+ext.swift */,
@@ -660,6 +666,7 @@
 				B2520A9D2A263E24009198B3 /* ForecastRouter.swift in Sources */,
 				B2520ABC2A2759C3009198B3 /* FakeForecastRepository.swift in Sources */,
 				B232E5D02A29DBAA00F8AB9C /* MatchedGeometryEffectAnimation.swift in Sources */,
+				B232E5D32A29DE4800F8AB9C /* Template.swift in Sources */,
 				B2520A8D2A262465009198B3 /* DayForecast.swift in Sources */,
 				B2520AB82A275877009198B3 /* ForecastRepository.swift in Sources */,
 				B232E5CE2A29DB5000F8AB9C /* BottomMenuAnimation.swift in Sources */,
@@ -691,6 +698,7 @@
 				B2520A832A262416009198B3 /* DayForecastDto.swift in Sources */,
 				B2520A942A263063009198B3 /* formatters.swift in Sources */,
 				B2520AC62A276EC6009198B3 /* SqlForecastRepository.swift in Sources */,
+				B232E5D42A29DE4800F8AB9C /* Calculator.swift in Sources */,
 				B2520AAA2A273154009198B3 /* ForecastOpenWeatherMapper.swift in Sources */,
 				B2520AA32A264043009198B3 /* ForecastRouterView.swift in Sources */,
 				B2520A6F2A260CBE009198B3 /* DayForecastView.swift in Sources */,
