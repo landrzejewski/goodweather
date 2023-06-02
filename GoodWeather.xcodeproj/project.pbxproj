@@ -33,6 +33,8 @@
 		B232E5A72A28C40100F8AB9C /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5A62A28C40100F8AB9C /* FoodView.swift */; };
 		B232E5A92A28C67F00F8AB9C /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5A82A28C67F00F8AB9C /* FoodDetailsView.swift */; };
 		B232E5AB2A28CF4D00F8AB9C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5AA2A28CF4D00F8AB9C /* OrderView.swift */; };
+		B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */; };
+		B232E5C82A29D8E000F8AB9C /* ButtonsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -126,6 +128,8 @@
 		B232E5A62A28C40100F8AB9C /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		B232E5A82A28C67F00F8AB9C /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
 		B232E5AA2A28CF4D00F8AB9C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimations.swift; sourceTree = "<group>"; };
+		B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsAnimation.swift; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -295,6 +299,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B232E5C42A29D30D00F8AB9C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */,
+				B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		B2520A332A26024E009198B3 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +374,7 @@
 		B2520A692A26073F009198B3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B232E5C42A29D30D00F8AB9C /* Animations */,
 				B232E5992A28B55A00F8AB9C /* View */,
 				B2520ACA2A279117009198B3 /* Capitalized.swift */,
 				B2520AC92A279117009198B3 /* UserProperty.swift */,
@@ -623,9 +637,11 @@
 				B2520ACB2A279117009198B3 /* UserProperty.swift in Sources */,
 				B2520AB32A274F7E009198B3 /* CityDto.swift in Sources */,
 				B232E5A52A28C2A800F8AB9C /* LoadingView.swift in Sources */,
+				B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */,
 				B232E57E2A28AB0900F8AB9C /* validators.swift in Sources */,
 				B232E5AB2A28CF4D00F8AB9C /* OrderView.swift in Sources */,
 				B2520A8C2A262465009198B3 /* Forecast.swift in Sources */,
+				B232E5C82A29D8E000F8AB9C /* ButtonsAnimation.swift in Sources */,
 				B232E5762A28A29800F8AB9C /* ForecastDetailsView.swift in Sources */,
 				B2520A852A262416009198B3 /* URLSessionForecastProvider.swift in Sources */,
 				B2520A9D2A263E24009198B3 /* ForecastRouter.swift in Sources */,
