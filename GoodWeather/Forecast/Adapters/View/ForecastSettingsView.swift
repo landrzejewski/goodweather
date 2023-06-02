@@ -21,6 +21,7 @@ struct ForecastSettingsView: View {
             HStack {
                 Spacer()
                 Button(action: { mode.wrappedValue.dismiss() }) { closeButton }
+                    .accessibility(identifier: "close")
             }
             .padding(.top, 6)
             Form {

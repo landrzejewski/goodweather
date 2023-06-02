@@ -30,14 +30,17 @@ struct ForecastView: View {
                     Image(systemName: "location")
                         .templateStyle(width: 20, height: 20)
                         .onTapGesture { viewModel.refreshForecastForCurrentLocation() }
+                        .accessibility(identifier: "location")
                     Spacer()
                     Image(systemName: "slider.horizontal.3")
                         .templateStyle(width: 20, height: 20)
                         .onTapGesture { showSettings = true }
+                        .accessibility(identifier: "settings")
                 }
                 .padding()
                 Text(viewModel.city)
                     .defaultStyle(size: 32)
+                    .accessibility(identifier: "city")
                 Spacer()
                 if let currentForecast = viewModel.currentForecast {
                     Image(systemName: currentForecast.icon)

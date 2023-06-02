@@ -8,7 +8,7 @@
 import Foundation
 
 final class Calculator {
-    
+
     let queue = DispatchQueue.global(qos: .userInitiated)
     
     func add(firstNumber: Double, secondNumber: Double) -> Double {
