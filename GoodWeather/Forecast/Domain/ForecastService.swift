@@ -32,7 +32,7 @@ final class ForecastService {
                     respose.send(completion: $0)
                 }
             }
-            receiveValue: { [self] forecast in
+            receiveValue: { [unowned self] forecast in
                 try? forecastRepository.deleteAll()
                 try? forecastRepository.save(forecast: forecast)
                 respose.send(forecast)
