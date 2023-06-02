@@ -17,7 +17,7 @@ struct GoodWeatherApp: App {
     
     var body: some Scene {
         WindowGroup {
-            BasicAnimations()
+            ButtonsAnimation()
 //            TabView {
 //                ForecastRouterView()
 //                    .environmentObject(ForecastRouter())

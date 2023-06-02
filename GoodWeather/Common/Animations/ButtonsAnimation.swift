@@ -22,7 +22,7 @@ struct ButtonsAnimation: View {
                         .rotationEffect(Angle.degrees(show ? 0 : -90))
                         .background(
                             Circle()
-                                .fill(Color.primaryColor)
+                                .fill(Color.mainColor)
                                 .shadow(radius: 8, x: 4, y: 4)
                         )
                         .opacity(show ? 1 : 0)
@@ -34,7 +34,7 @@ struct ButtonsAnimation: View {
                         .rotationEffect(Angle.degrees(show ? 0 : 90))
                         .background(
                             Circle()
-                                .fill(Color.primaryColor)
+                                .fill(Color.mainColor)
                                 .shadow(radius: 8, x: 4, y: 4)
                         )
                         .opacity(show ? 1 : 0)
@@ -46,7 +46,7 @@ struct ButtonsAnimation: View {
                         .rotationEffect(Angle.degrees(show ? 0 : 90))
                         .background(
                             Circle()
-                                .fill(Color.primaryColor)
+                                .fill(Color.mainColor)
                                 .shadow(radius: 8, x: 4, y: 4)
                         )
                         .opacity(show ? 1 : 0)
@@ -57,7 +57,7 @@ struct ButtonsAnimation: View {
                         .padding(24)
                         .background(
                             Circle()
-                                .fill(Color.primaryColor)
+                                .fill(Color.mainColor)
                                 .shadow(radius: 8, x: 4, y: 4)
                         )
                 }

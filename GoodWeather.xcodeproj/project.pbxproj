@@ -35,6 +35,7 @@
 		B232E5AB2A28CF4D00F8AB9C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5AA2A28CF4D00F8AB9C /* OrderView.swift */; };
 		B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */; };
 		B232E5C82A29D8E000F8AB9C /* ButtonsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */; };
+		B232E5CA2A29D9B100F8AB9C /* SegmentedViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */; };
 		B2520A402A26024E009198B3 /* GoodWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */; };
 		B2520A422A26024E009198B3 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520A412A26024E009198B3 /* ForecastView.swift */; };
 		B2520A442A26024E009198B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2520A432A26024E009198B3 /* Assets.xcassets */; };
@@ -130,6 +131,7 @@
 		B232E5AA2A28CF4D00F8AB9C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimations.swift; sourceTree = "<group>"; };
 		B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsAnimation.swift; sourceTree = "<group>"; };
+		B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewAnimation.swift; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			children = (
 				B232E5C52A29D33D00F8AB9C /* BasicAnimations.swift */,
 				B232E5C72A29D8E000F8AB9C /* ButtonsAnimation.swift */,
+				B232E5C92A29D9B100F8AB9C /* SegmentedViewAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */,
 				B232E57E2A28AB0900F8AB9C /* validators.swift in Sources */,
 				B232E5AB2A28CF4D00F8AB9C /* OrderView.swift in Sources */,
+				B232E5CA2A29D9B100F8AB9C /* SegmentedViewAnimation.swift in Sources */,
 				B2520A8C2A262465009198B3 /* Forecast.swift in Sources */,
 				B232E5C82A29D8E000F8AB9C /* ButtonsAnimation.swift in Sources */,
 				B232E5762A28A29800F8AB9C /* ForecastDetailsView.swift in Sources */,
