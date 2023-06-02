@@ -150,6 +150,7 @@
 		B232E5DE2A2A0F6600F8AB9C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B232E5E22A2A110D00F8AB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B232E5E42A2A111000F8AB9C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B232E5EF2A2A29B600F8AB9C /* AsyncExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AsyncExamples.playground; sourceTree = "<group>"; };
 		B2520A3C2A26024E009198B3 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2520A3F2A26024E009198B3 /* GoodWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherApp.swift; sourceTree = "<group>"; };
 		B2520A412A26024E009198B3 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
@@ -335,6 +336,7 @@
 		B2520A332A26024E009198B3 = {
 			isa = PBXGroup;
 			children = (
+				B232E5EF2A2A29B600F8AB9C /* AsyncExamples.playground */,
 				B232E56E2A28893E00F8AB9C /* Training.playground */,
 				B232E5732A289F6200F8AB9C /* data.json */,
 				B232E58B2A28B3CA00F8AB9C /* extras */,
